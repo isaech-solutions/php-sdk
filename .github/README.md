@@ -31,3 +31,16 @@ Install the package via Composer:
 
 ```bash
 composer require isaech-solutions/sdk
+```
+
+## ⚡ Basic Usage
+
+### 1. Initialize
+First, load your API key once in your application's bootstrap file (e.g., `index.php` or `AppServiceProvider`):
+
+```php
+use IsaechSolutions\Sdk\Facades\Isaech;
+
+// Initialize SDK globally
+Isaech::init('YOUR_ISAECH_API_KEY');
+```
