@@ -1,0 +1,21 @@
+{
+    "name": "isaech-solutions/sdk",
+    "description": "An SDK for accessing our services via our dedicated api",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^8.3",
+        "php": "^8.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "IsaechSolutions\\Sdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Isaac Machakata",
+            "email": "hie@isaac.co.zw"
+        }
+    ]
+}
