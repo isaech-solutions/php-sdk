@@ -1,7 +1,7 @@
 # Isaech Solutions PHP SDK
 
-[![Latest Version](https://img.shields.io/packagist/v/isaech/isaech-php-sdk.svg?style=flat-square)](https://packagist.org/packages/isaech/isaech-php-sdk)
-[![License](https://img.shields.io/packagist/l/isaech/isaech-php-sdk.svg?style=flat-square)](LICENSE)
+[![Latest Version](https://img.shields.io/packagist/v/isaech-solutions/sdk.svg?style=flat-square)](https://packagist.org/packages/isaech-solutions/sdk)
+[![License](https://img.shields.io/packagist/l/isaech-solutions/sdk.svg?style=flat-square)](LICENSE)
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D%208.0-blue.svg?style=flat-square)](https://php.net)
 
 An official PHP library for interacting with **Isaech Solutions** APIs. Seamlessly manage Bulk SMS, domain availability checks, and hosting account statuses directly inside your PHP applications.
@@ -20,7 +20,7 @@ An official PHP library for interacting with **Isaech Solutions** APIs. Seamless
 ## Requirements
 
 - PHP `8.0` or higher
-- `guzzlehttp/guzzle` `^7.0`
+- `guzzlehttp/guzzle` `^7.5`
 - `ext-json`
 
 ---
@@ -30,4 +30,4 @@ An official PHP library for interacting with **Isaech Solutions** APIs. Seamless
 Install the package via Composer:
 
 ```bash
-composer require isaech/isaech-php-sdk
+composer require isaech-solutions/sdk
