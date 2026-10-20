@@ -1,23 +1,23 @@
 <?php
-
 namespace IsaechSolutions\Sdk\Services;
 
 use IsaechSolutions\Sdk\Client;
 
 class SmsService
 {
-    public function __construct(private Client $client) {}
+    public function __construct(private Client $client)
+    {}
 
     /**
      * Send Bulk SMS to one or multiple recipients
      */
     public function sendBulk(array $recipients, string $message, string $senderId = ''): array
     {
-        return $this->client->request('POST', 'sms/send', [
+        return $this->client->request('POST', 'sms/messages', [
             'json' => [
-                'recipients' => $recipients,
-                'message'    => $message,
-                'sender_id'  => $senderId,
+                'receivers' => implode(',', $recipients),
+                'message'   => $message,
+                'sender_id' => $senderId,
             ],
         ]);
     }
@@ -27,7 +27,7 @@ class SmsService
      */
     private function getDeliveryReport(string $messageId): array
     {
-        return $this->client->request('GET', "sms/reports/{$messageId}");
+        return $this->client->request('GET', "sms/messages/reports/{$messageId}");
     }
 
     /**
@@ -35,7 +35,7 @@ class SmsService
      */
     public function getHistory(int $page = 1, int $limit = 50): array
     {
-        return $this->client->request('GET', 'sms/history', [
+        return $this->client->request('GET', 'sms/messages/history', [
             'query' => [
                 'page'  => $page,
                 'limit' => $limit,
