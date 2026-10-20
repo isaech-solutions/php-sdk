@@ -17,5 +17,8 @@
             "name": "Isaac Machakata",
             "email": "hie@isaac.co.zw"
         }
-    ]
+    ],
+    "config": {
+        "lock": false
+    }
 }
