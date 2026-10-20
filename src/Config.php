@@ -19,5 +19,5 @@ class Config
      * SDK Version & Metadata
      */
     public const VERSION = '0.0.1';
-    public const USER_AGENT = 'IsaechSolutions-PHP-SDK/' . self::VERSION;
+    public const USER_AGENT = 'Isaech Solutions-PHP-SDK/' . self::VERSION;
 }
